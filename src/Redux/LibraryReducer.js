@@ -1,12 +1,8 @@
 import {LibraryActions} from "./LibraryActions";
 
-const initialState = {
-    books: []
-};
-
 function addToArray(array, objectToAdd) {
     return [...array, objectToAdd];
-}
+};
 
 function removeFromArrayById(array, id) {
     const index = array.findIndex(obj => obj.id === id);
@@ -14,7 +10,7 @@ function removeFromArrayById(array, id) {
         return [...array.slice(0, index), ...array.slice(index + 1)];
     }
     return array;
-}
+};
 
 function updateInArray(array, object) {
     const index = array.findIndex(obj => obj.id === object.id);
@@ -26,9 +22,23 @@ function updateInArray(array, object) {
         ];
     }
     return array;
-}
+};
 
-export const LibraryReducer = (state = initialState, action) => {
+function saveToLocalStorage(StorageItem) {
+    localStorage.setItem("OwnLibraryApp", JSON.stringify(books));
+};
+function loadFromLocalStorage() {
+    const fromLocalStorage = localStorage.getItem("OwnLibraryApp");
+    const books = fromLocalStorage ? JSON.parse(fromLocalStorage) : [];
+    return {
+        books
+    };
+};
+
+export const LibraryReducer = (state, action) => {
+    if (typeof state === "undefined") {
+        return loadFromLocalStorage();
+    }
   let books;
   switch (action.type) {
       case LibraryActions.ADD: {
@@ -49,6 +59,7 @@ export const LibraryReducer = (state = initialState, action) => {
       default:
           return state;
   }
+  saveToLocalStorage(books);
 
   return {
       books
