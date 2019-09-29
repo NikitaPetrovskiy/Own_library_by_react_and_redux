@@ -25,10 +25,10 @@ function updateInArray(array, object) {
 };
 
 function saveToLocalStorage(StorageItem) {
-    localStorage.setItem("OwnLibraryApp", JSON.stringify(books));
+    localStorage.setItem("OwnLibrary", JSON.stringify(StorageItem));
 };
 function loadFromLocalStorage() {
-    const fromLocalStorage = localStorage.getItem("OwnLibraryApp");
+    const fromLocalStorage = localStorage.getItem("OwnLibrary");
     const books = fromLocalStorage ? JSON.parse(fromLocalStorage) : [];
     return {
         books
