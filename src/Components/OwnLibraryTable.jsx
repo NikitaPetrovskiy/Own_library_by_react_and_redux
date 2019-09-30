@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from "react-redux";
-import { BookStatuses } from "../Redux";
-import { deleteBookAC } from "../Redux";
+import { BookStatuses } from "../Store";
+import { deleteBookAC } from "../Store";
+import { Link } from "react-router-dom";
 
 const statusToText = {
     [BookStatuses.NONE]: '',
@@ -10,20 +11,10 @@ const statusToText = {
     [BookStatuses.READ]: 'Прочитал'
 };
 
-const mapStateToProp = (state) => {
-    return {
-        books: state.books
-    }
-};
-const mapDispatchToProp = (dispatch) => {
-    return {
-        onDelete: id => dispatch(deleteBookAC(id))
-    };
-};
-
 export const OwnLibraryTable = ({books, onDelete}) => {
     return (
         <>
+            <Link to="/books/new">Добавить книгу</Link>
             <table>
                 <thead>
                     <tr>
@@ -53,6 +44,17 @@ export const OwnLibraryTable = ({books, onDelete}) => {
             </table>
         </>
     );
+};
+
+const mapStateToProp = (state) => {
+    return {
+        books: state.books
+    }
+};
+const mapDispatchToProp = (dispatch) => {
+    return {
+        onDelete: id => dispatch(deleteBookAC(id))
+    };
 };
 
 export const ConnectedOwnLibrary = connect(mapStateToProp, mapDispatchToProp)(OwnLibraryTable);

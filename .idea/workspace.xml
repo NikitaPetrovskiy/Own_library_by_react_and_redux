@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="82996eda-e1c5-4379-866f-ebcc3076caac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OwnLibraryApp.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/LibraryReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/LibraryReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/OwnLibraryTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OwnLibraryTable.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/ActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/ActionCreators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/BookStatuses.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/BookStatuses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/LibraryActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/LibraryActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/LibraryReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/LibraryReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,44 +22,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Components/OwnLibraryTable.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Redux/LibraryReducer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="35" column="2" lean-forward="true" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Components/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="531">
+              <caret line="28" column="23" lean-forward="true" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/OwnLibraryTable.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-177">
+              <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Components/AddBookForm/AddBookForm.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="861">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/AddBookForm/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -74,12 +81,13 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/App.jsx" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/Redux/LibraryReducer.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/Store/LibraryReducer.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/Components/OwnLibraryTable.jsx" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/package.json" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/Redux/BookStatuses.js" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/Redux/ActionCreators.js" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/Redux/LibraryActions.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/Store/BookStatuses.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/Store/ActionCreators.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/Components/AddBookForm/AddBookForm.jsx" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/Store/LibraryActions.js" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -94,14 +102,19 @@
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/Components/index.js" />
         <option value="$PROJECT_DIR$/src/Redux/LibraryReducer.js" />
-        <option value="$PROJECT_DIR$/src/App.jsx" />
         <option value="$PROJECT_DIR$/src/Components/OwnLibraryTable.jsx" />
+        <option value="$PROJECT_DIR$/src/Components/AddBookForm/index.js" />
+        <option value="$PROJECT_DIR$/src/App.jsx" />
+        <option value="$PROJECT_DIR$/src/Components/AddBookForm/AddBookForm.jsx" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1280" />
     <option name="height" value="800" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -124,7 +137,13 @@
               <item name="own_library_by_react_and_redux" type="b2602c69:ProjectViewProjectNode" />
               <item name="own_library_by_react_and_redux" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Redux" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="own_library_by_react_and_redux" type="b2602c69:ProjectViewProjectNode" />
+              <item name="own_library_by_react_and_redux" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Store" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -167,16 +186,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569767775897</updated>
-      <workItem from="1569767777342" duration="7206000" />
+      <workItem from="1569767777342" duration="9820000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7206000" />
+    <option name="totallyTimeSpent" value="9820000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="npm" side_tool="true" />
       <window_info id="Favorites" side_tool="true" />
@@ -185,7 +203,7 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="RNConsole" />
-      <window_info anchor="bottom" id="Terminal" weight="0.34206694" />
+      <window_info anchor="bottom" id="Terminal" weight="0.16157205" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -229,31 +247,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Redux/LibraryActions.js">
+    <entry file="file://$PROJECT_DIR$/src/Store/LibraryActions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="27" selection-start-column="13" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Redux/index.js">
+    <entry file="file://$PROJECT_DIR$/src/Store/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Redux/ActionCreators.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Redux/BookStatuses.js">
+    <entry file="file://$PROJECT_DIR$/src/Store/BookStatuses.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="25" selection-start-column="13" selection-end-column="25" />
@@ -270,9 +278,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Redux/LibraryReducer.js">
+    <entry file="file://$PROJECT_DIR$/src/Store/LibraryReducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
+        <state relative-caret-position="735">
           <caret line="35" column="2" lean-forward="true" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
         </state>
       </provider>
@@ -284,10 +292,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Store/ActionCreators.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/AddBookForm/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="531">
+          <caret line="28" column="23" lean-forward="true" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -296,8 +318,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/OwnLibraryTable.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+        <state relative-caret-position="-177">
+          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/AddBookForm/AddBookForm.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="861">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
