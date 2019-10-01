@@ -40,13 +40,13 @@ export class AddBookForm extends React.Component {
   }
 };
 
-const mapStateToProp = () => {
+const mapStateToProps = () => {
     return {}
 };
-const mapDispatchToProp = (dispatch) => {
+const mapDispatchToProps = (dispatch) => {
    return  {
        onAdd: book => dispatch(addBookAC(book))
    }
 };
 
-export const ConnectedAddBookForm = connect(mapStateToProp, mapDispatchToProp)(AddBookForm);
+export const ConnectedAddBookForm = connect(mapStateToProps, mapDispatchToProps)(AddBookForm);

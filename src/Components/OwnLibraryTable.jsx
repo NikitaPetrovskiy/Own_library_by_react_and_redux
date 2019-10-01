@@ -14,7 +14,6 @@ const statusToText = {
 export const OwnLibraryTable = ({books, onDelete}) => {
     return (
         <>
-            <Link to="/books/new">Добавить книгу</Link>
             <table>
                 <thead>
                     <tr>
@@ -36,25 +35,29 @@ export const OwnLibraryTable = ({books, onDelete}) => {
                         <td>{book.rating}</td>
                         <td>{statusToText[book.status]}</td>
                         <td>
-                            <button onClick={() => onDelete(book.id)}>Удалить</button>
+                            <Link className="button updateBtn" to={`/books/${book.id}`}>Редактировать</Link>
+                        </td>
+                        <td>
+                            <button className="button delBtn" onClick={() => onDelete(book.id)}>Удалить</button>
                         </td>
                     </tr>
                 ))}
                 </tbody>
             </table>
+            <Link to="/books/new" className="button addBtn" >Добавить книгу</Link>
         </>
     );
 };
 
-const mapStateToProp = (state) => {
+const mapStateToProps = (state) => {
     return {
         books: state.books
     }
 };
-const mapDispatchToProp = (dispatch) => {
+const mapDispatchToProps = (dispatch) => {
     return {
         onDelete: id => dispatch(deleteBookAC(id))
     };
 };
 
-export const ConnectedOwnLibrary = connect(mapStateToProp, mapDispatchToProp)(OwnLibraryTable);
+export const ConnectedOwnLibrary = connect(mapStateToProps, mapDispatchToProps)(OwnLibraryTable);
