@@ -44,7 +44,7 @@ export const LibraryReducer = (state, action) => {
       case LibraryActions.ADD: {
           books = addToArray(state.books, {
               ...action.payload,
-              id: Math.round(Math.random().toString() * 100)
+              id: Math.round(Math.random().toString() * 10000)
           });
           break;
       }

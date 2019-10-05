@@ -14,16 +14,21 @@ const statusToText = {
 export const OwnLibraryTable = ({books, onDelete}) => {
     return (
         <>
-            <table>
-                <thead>
+            <div className="navbar navbar-dark bg-dark shadow-sm">
+                <div className="container d-flex justify-content-left bg-dark shadow-sm">
+                    <Link to="/books/new" className="btn btn-success" >Добавить книгу</Link>
+                </div>
+            </div>
+            <table className="table table-dark table-striped">
+                <thead >
                     <tr>
-                        <th>ID</th>
-                        <th>Автор</th>
-                        <th>Название</th>
-                        <th>Рейтинг</th>
-                        <th>Статус</th>
-                        <th></th>
-                        <th></th>
+                        <th scope="col">ID</th>
+                        <th scope="col">Автор</th>
+                        <th scope="col">Название</th>
+                        <th scope="col">Рейтинг</th>
+                        <th scope="col">Статус</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -35,16 +40,19 @@ export const OwnLibraryTable = ({books, onDelete}) => {
                         <td>{book.rating}</td>
                         <td>{statusToText[book.status]}</td>
                         <td>
-                            <Link className="button updateBtn" to={`/books/${book.id}`}>Редактировать</Link>
+                            <Link className="btn btn-info" to={`/books/${book.id}`}>
+                                Редактировать
+                            </Link>
                         </td>
                         <td>
-                            <button className="button delBtn" onClick={() => onDelete(book.id)}>Удалить</button>
+                            <button className="btn btn-danger" onClick={() => onDelete(book.id)}>
+                                Удалить
+                            </button>
                         </td>
                     </tr>
                 ))}
                 </tbody>
             </table>
-            <Link to="/books/new" className="button addBtn" >Добавить книгу</Link>
         </>
     );
 };

@@ -20,16 +20,16 @@ class EditBookForm extends React.Component {
 
     render() {
         return (
-            <form onSubmit={e => e.preventDefault()}>
+            <form id="edit-form" onSubmit={e => e.preventDefault()}>
                 {Object.entries(BookMeta).map(([field, description]) => {
                     const Field = fieldTypeToComponent[description.type];
                     return (
-                        <>
+                        <div className=" edit-form-div form-group">
                             {description.type !== FieldType.ID && (
                                 <label htmlFor={field}>{description.label}</label>
                             )}
                             {description.type === FieldType.ID && (
-                                <h1>{this.props.book.id}</h1>
+                                <h1>ID книги: {this.props.book.id}</h1>
                             )}
                             {description.type !== FieldType.ID && (
                                 <Field
@@ -44,13 +44,13 @@ class EditBookForm extends React.Component {
                                     description={description}
                                 />
                             )}
-                        </>
+                        </div>
                     );
                 })}
-                <Link to="/books"
+                <Link className="btn btn-success" to="/books"
                       onClick={() => this.props.onEdit(this.props.book.id, this.state)}
                 >Сохранить изменения</Link>
-                <Link to="/books">Отмена</Link>
+                <Link className="btn btn-primary" to="/books">Отмена</Link>
             </form>
         )
     };
